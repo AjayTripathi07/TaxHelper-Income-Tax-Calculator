@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00796b; /* Teal color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-buttons a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.header-buttons a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.blue-area {
+    background-color: #b2ebf2; /* Lighter teal */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.calculator-button, .income-tax-website-button {
+    background-color: #00796b; /* Teal color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.calculator-button:hover, .income-tax-website-button:hover {
+    background-color: #004d40; /* Darker teal */
+}
+
+.scrollable-content {
+    background-color: #f0f8ff; /* Lighter shade of blue */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%; /* Take maximum home page area */
+    margin: 0 auto; /* Center the box */
+}
+
+h1, h2 {
+    color: #004d40; /* Darker teal for headings */
+}
+
+pre {
+    background-color: #e0f7fa; /* Light blue for preformatted text */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}

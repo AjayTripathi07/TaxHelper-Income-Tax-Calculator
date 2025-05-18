@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - TaxHelper</title>
+    <style>
+        body {
+            background: #f0f8ff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0074d9;
+            color: #fff;
+            padding: 20px 0 10px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 0 0 12px 12px;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+        }
+        nav {
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+            margin: 40px auto;
+        }
+        .container .title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0074d9;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        .content form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+            gap: 10px;
+        }
+        form .user-details .input-box {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        form .input-box span.details {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .user-details .input-box input {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid #b0c4de;
+            background: #f8fbff;
+            transition: border 0.2s;
+        }
+        .user-details .input-box input:focus {
+            border: 1.5px solid #0074d9;
+        }
+        .gender-details {
+            margin-bottom: 18px;
+        }
+        .gender-title {
+            font-weight: 500;
+            color: #333;
+        }
+        .category {
+            display: flex;
+            gap: 18px;
+            margin-top: 8px;
+        }
+        .category label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .dot {
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            background: #b0c4de;
+            margin-right: 6px;
+            border: 2px solid #0074d9;
+            display: inline-block;
+        }
+        input[type="radio"]:checked + .dot {
+            background: #0074d9;
+        }
+        form .button {
+            height: 45px;
+            margin: 35px 0 0 0;
+        }
+        form .button input[type="submit"] {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            cursor: pointer;
+            background: #0074d9;
+            transition: background 0.2s;
+        }
+        form .button input[type="submit"]:hover {
+            background: #005fa3;
+        }
+        @media (max-width: 600px) {
+            .container {
+                max-width: 98%;
+                padding: 10px 4px;
+            }
+            .content form .user-details {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label>
+                            <input type="radio" name="gender" id="dot-1" required>
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" id="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" id="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
